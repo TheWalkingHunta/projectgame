@@ -1,0 +1,51 @@
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.dice-dot {
+  --top: 0%;
+  --left: 0%;
+
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+}
+
+.btn-roll-dice {
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.center-content {
+  justify-content: space-between;
+  text-align: center;
+}
+
